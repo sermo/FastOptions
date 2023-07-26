@@ -12,6 +12,7 @@
         <PackageProjectUrl>https://github.com/sermo/FastOptions</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/sermo/FastOptions/blob/main/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/sermo/FastOptions</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
