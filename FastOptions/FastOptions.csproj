@@ -4,6 +4,14 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Version>1.0.0-rc</Version>
+        <Title>FastOptions</Title>
+        <Authors>Sermo</Authors>
+        <Description>A significantly faster drop in replacement for the default OptionsManager provided by ASP.NET core.</Description>
+        <Copyright>2023</Copyright>
+        <PackageProjectUrl>https://github.com/sermo/FastOptions</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/sermo/FastOptions/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/sermo/FastOptions</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
