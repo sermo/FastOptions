@@ -1,8 +1,9 @@
-name: Upload nuget package
+name: Publish nuget package
 
 on:
+  workflow_dispatch:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   deploy:
