@@ -22,4 +22,4 @@ jobs:
       - name: Create the package
         run: dotnet pack --configuration Release FastOptions
       - name: Publish the package to nuget
-        run: dotnet nuget push FastOptions/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
+        run: dotnet nuget push */bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
