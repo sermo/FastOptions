@@ -16,11 +16,10 @@ jobs:
       - uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '6.0.x' # SDK Version to use.
-          source-url: https://api.nuget.org/v3/index.json
         env:
           NUGET_AUTH_TOKEN: ${{secrets.NUGET_AUTH_TOKEN}}
       - run: dotnet build --configuration Release FastOptions
       - name: Create the package
         run: dotnet pack --configuration Release FastOptions
-      - name: Publish the package to GPR
-        run: dotnet nuget push FastOptions/bin/Release/*.nupkg
+      - name: Publish the package to nuget
+        run: dotnet nuget push FastOptions/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
